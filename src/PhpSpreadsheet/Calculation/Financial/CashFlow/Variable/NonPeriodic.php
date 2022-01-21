@@ -251,8 +251,5 @@ class NonPeriodic
         if ($valCount != count($dates)) {
             throw new Exception(Functions::NAN());
         }
-        if ($valCount > 1 && ((min($values) > 0) || (max($values) < 0))) {
-            throw new Exception(Functions::NAN());
-        }
     }
 }
